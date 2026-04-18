@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/puspa/OneDrive/Documents/CIS 240/animated-website-super-skilled/animated-website-super-skilled/docs\")",
+      "Bash(mkdir -p \"C:/Users/puspa/OneDrive/Documents/CIS 240/animated-website-super-skilled/animated-website-super-skilled/assets\")",
+      "mcp__stitch__create_project",
+      "mcp__stitch__generate_screen_from_text",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.pinterest.com/pin/23925441769038472/\")",
+      "Bash(curl -v -sL \"https://www.pinterest.com/pin/23925441769038472/\")",
+      "WebFetch(domain:www.pinterest.com)",
+      "Bash(curl -k -sL -o hero-pinterest.jpg \"https://i.pinimg.com/originals/3a/66/6d/3a666d248e23ddd5ca5063c2a655cf22.jpg\")"
+    ]
+  }
+}

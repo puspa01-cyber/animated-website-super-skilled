@@ -1,0 +1,350 @@
+==============================================================
+SITE: Château Barkalot
+==============================================================
+
+ROLE / CONTEXT
+--------------
+Role: You are Chief Creative Director for Pixar 3D Movies.
+Context: You are making the film "King Arthur and The Knights of Barkalot."
+Barkalot is a "doggie Camelot" and all the characters of Camelot are Dogs.
+The film features a "Doggie Cafe" called Château Barkalot. You, the Chief
+Creative Director, have commissioned a highly talented Web Designer, Jeremy,
+to create the Château Barkalot website.
+
+Assign each knight a different dog breed of your choice. Render every
+character in clean Pixar 3D cartoon style — soft subsurface scattering,
+painterly lighting, expressive oversized eyes, stylized fur shader.
+
+Characters:
+- King Arthur – the leader (not always counted as a knight, but often included)
+- Sir Lancelot – greatest warrior, tragic love with Guinevere
+- Sir Galahad – pure knight, finds the Holy Grail
+- Sir Gawain – loyal and noble (Green Knight story)
+- Sir Percival – Grail seeker
+- Sir Tristan – tragic romance with Isolde
+- Sir Bedivere – returns Excalibur to the lake
+- Sir Kay – Arthur's foster brother
+- Sir Bors – one of the Grail achievers
+- Sir Mordred – traitor, Arthur's downfall
+- Sir Gareth – humble, noble knight
+- Sir Agravain – exposes Lancelot/Guinevere
+- Sir Gaheris – Gawain's brother
+- Sir Palamedes – Saracen knight
+- Sir Ector – Arthur's foster father (sometimes included)
+- Sir Lamorak – one of the strongest knights
+- Merlin – The Wizard, chief advisor to Arthur
+- Lady Guinevere
+
+
+BUILD STACK
+-----------
+1. Stitch (layout generation)
+2. UI UX Pro Max (style / palette / typography selection)
+3. Firecrawl (reference scrape)
+4. Magic / 21st.dev (marketing blocks)
+5. Nano Banana 2 (hero + feature imagery)
+6. Brand skill (voice + messaging)
+7. Design skill (logo, icons, OG image)
+8. Design System skill (token architecture)
+9. UI Styling skill (shadcn/ui interactive components)
+
+
+PURPOSE
+-------
+A dog café serving coffee, light food, and a welcoming space where doggies
+relax with other doggies, attend small events, and meet adoptable pet doggies.
+
+
+==============================================================
+STEP 2 — BRAND VOICE (for `brand` skill)
+==============================================================
+
+Voice archetype: The Jester-Sage — Arthurian whimsy meets modern neighborhood
+warmth. Speaks like a kindly royal herald who has clearly spent the morning
+giving belly rubs.
+
+Tone dimensions (scale 1–5):
+- Formal ↔ Casual:        2 (casual with courtly flourishes)
+- Serious ↔ Playful:      5 (playful)
+- Reserved ↔ Expressive:  4 (expressive)
+- Modern ↔ Timeless:      4 (timeless wink)
+
+Voice rules:
+- Sprinkle medieval vocabulary sparingly: "hark," "verily," "pull up a
+  tankard," "the round table awaits." Never go full Ren-faire — 1 medieval
+  phrase per paragraph maximum.
+- Dog puns are earned, not stacked. Max one pun per section.
+- Second person ("you," "your pup") — never corporate "customers" or "guests."
+- Active voice. Short sentences. Warmth over cleverness when they conflict.
+
+Words to use:   hark, noble, quest, round table, tankard, realm, pack, pup,
+                paw-worthy, wag, cozy, gather
+Words to avoid: leverage, synergy, solutions, premium, luxury, world-class,
+                "fur babies" (too saccharine), "doggos" outside brief's own usage
+
+Messaging framework:
+- Tagline (≤7 words):        "Where every pup is knighted."
+- Value prop (≤20 words):    "A cozy Camelot for coffee, pastries, and the
+                              noblest pack of dogs in the realm."
+- Key phrases (3–5):          "The round table awaits," "Hark — coffee is
+                              served," "Every pup, a knight," "Pull up a
+                              tankard," "Gather the pack"
+
+
+==============================================================
+STEP 3 — DESIGN SYSTEM (for `ui-ux-pro-max` + `design-system`)
+==============================================================
+
+Style keywords:   warm, playful, cozy, modern, friendly, inviting, clean,
+                  Pixar 3D, soft rounded, storybook-illustrative
+
+Preferred style direction: soft claymorphism with painterly storybook
+accents — generous corner radii, tactile shadows, no sharp geometric
+brutalism. Hero section may break grid with layered illustration.
+
+COLOR SYSTEM (semantic roles — let ui-ux-pro-max pick the exact 161-palette
+entries that match these roles):
+- Primary:         warm sunset red/coral (castle banners)
+- Secondary:       deep royal purple (twilight sky)
+- Tertiary:        forest green (meadow / tabard)
+- Accent:          warm golden honey (candlelight, coffee crema)
+- Surface-base:    cream / parchment off-white
+- Surface-raised:  soft warm beige
+- Ink:             deep espresso brown (NOT pure black)
+- Success/info:    sage green / sky blue from the palette
+
+Contrast requirement: WCAG AA minimum, AAA preferred for body copy.
+
+TYPOGRAPHY (let ui-ux-pro-max pick from the 57 pairings, matching this
+direction):
+- Display:   a rounded medieval-adjacent serif or storybook display (NOT
+             blackletter — readable and friendly)
+- Body:      humanist sans-serif, high x-height, 16–18px base
+- Accent:    a single italic or hand-drawn style for pull-quotes only
+- Type scale: 1.250 (major third) modular scale
+- Line height: 1.55 body, 1.15 display
+
+SPACING & LAYOUT:
+- Spacing scale (4px base): 4, 8, 12, 16, 24, 32, 48, 64, 96, 128
+- Container max-width: 1280px
+- Grid: 12-col desktop, 8-col tablet, 4-col mobile
+- Section vertical rhythm: 96px desktop / 64px tablet / 48px mobile
+
+RADII:
+- sm 8px  |  md 16px  |  lg 24px  |  xl 32px  |  pill 9999px
+Default card radius: lg. Buttons: pill.
+
+ELEVATION (soft claymorphism — no hard drop shadows):
+- sm  0 2px 8px   rgba(espresso / 0.08)
+- md  0 8px 24px  rgba(espresso / 0.10)
+- lg  0 16px 48px rgba(espresso / 0.12)
+
+MOTION LANGUAGE:
+- Easing:     cubic-bezier(0.22, 1, 0.36, 1) for entrances (soft over-settle)
+- Durations:  micro 150ms, standard 300ms, expressive 600ms, hero 900ms
+- Stagger:    80ms between siblings on scroll-reveal
+- Hover:      CTA lift 2px + shadow md → lg, 200ms
+- Hero:       title fade+rise 24px over 900ms, 120ms per-word stagger
+- prefers-reduced-motion: all transform/opacity transitions collapse to
+  opacity only at 200ms
+
+
+==============================================================
+STEP 4 — REFERENCE SCRAPE (for Firecrawl)
+==============================================================
+Reference URL: https://www.mutwerk.org/
+
+Borrow: layout rhythm, hero composition, section transitions, copy voice
+cadence where it fits the Step 2 archetype.
+Avoid: any palette, typography, or motion choices that conflict with Step 3.
+
+
+==============================================================
+STEP 5 — SECTIONS & LAYOUT (for Stitch)
+==============================================================
+Section order and goal:
+
+1. Hero         — brand, tagline, 2 CTAs ("Reserve a Table" / "Meet the Pack")
+2. About        — origin story of Château Barkalot, founder note, vibe photos
+3. Menu         — Saxon-inspired brews (mead-coffee, ale-latte), pastries,
+                  dog treats; 3-col card grid with price + dietary icons
+4. Dog Play Area — amenities list with themed icons, capacity, rules, booking
+5. Events       — calendar/list hybrid: jousting nights, adoption fairs,
+                  "squire classes" (puppy training)
+6. Adoptable    — portrait grid of rescue dogs, filter by size/energy, modal
+                  for each with story + adopt CTA
+7. Gallery      — Pinterest-style masonry of customer + pup photos
+8. Testimonials — carousel, 5-star ratings, guest + pup names
+9. FAQ          — accordion, 8–10 questions (dogs-per-table? off-leash? etc.)
+10. Contact     — form (name, email, message, topic select), hours, map,
+                  social links
+
+Hero 21st.dev prompt:
+  "A warm and playful hero section for a dog café with a large welcoming
+  headline, short subtitle, two CTA buttons, cozy café atmosphere, soft
+  natural lighting, rounded elements, and subtle animated accents that feel
+  friendly and modern."
+
+
+==============================================================
+STEP 6 — IMAGERY (for Nano Banana 2, with fallback tiers)
+==============================================================
+Global art direction: Pixar 3D cartoon, soft subsurface scattering, painterly
+golden-hour lighting, shallow depth of field, no text in images, no humans
+with visible logos, consistent warm palette across all renders.
+
+Fallback art direction (if Nano Banana 2 is unavailable and the pipeline drops
+to the `design` skill, hand-authored SVG, or a third-party SVG library): the
+Pixar 3D / painterly storybook direction STILL APPLIES. Do not ship flat
+corporate vector art. Fallback illustrations must stay rounded, friendly,
+warm-lit, and palette-bound to Step 3 tokens. Register may shift from
+photographic-real (Tier 1) to stylized illustration (Tiers 2–4) — that's
+acceptable, but the brand warmth must survive.
+
+Third-party SVG (Tier 4 — undraw.co / Storyset / Blush only): royalty-free
+license required. CC0 preferred; CC-BY acceptable if attribution lands in
+the footer credits line. No paid, restricted, or ambiguously-licensed assets.
+
+Aspect ratios:
+- Hero:        16:9 (2560×1440 export)
+- Feature:     4:3
+- Portrait:    3:4 (Adoptable dogs, Knight character cards)
+- Gallery:     mixed (square + 4:5)
+- OG/social:   1200×630
+
+Per-image prompts:
+- Hero         — cozy dog café interior: happy Pixar-style dogs lounging
+                 beside human guests sipping coffee, warm sunlight through
+                 leaded windows, modern rustic decor with subtle Camelot
+                 banners, shallow DoF
+- About        — Pixar-style barista smiling behind a wood-and-stone counter,
+                 a golden retriever sitting nearby wearing a small tabard,
+                 friendly neighborhood atmosphere, soft window light
+- Menu         — top-down close-up of coffee drinks inspired by Saxon
+                 beverages (mead, ale) served in pewter tankards, pastries,
+                 a dog-treat sampler board on a worn oak café table,
+                 candlelight
+- Dog Play Area — several small and medium Pixar-style dogs playing in a
+                 clean indoor lounge: some miniature jousting on rocking-
+                 horse mounts, others mock sword-fighting with foam swords,
+                 soft textures, skylight
+- Adoptable    — cheerful portrait lineup of 6 adorable Pixar-style rescue
+                 dogs wearing colorful bandanas, bright backdrop, even
+                 lighting, consistent 3:4 framing
+- Gallery      — candid moments: customers petting dogs, sipping lattes in
+                 tankards, a knight-dog receiving a pastry, relaxed social
+                 space
+- Knight cards — 18 portrait renders, one per character listed above, each
+                 in a different dog breed, wearing character-appropriate
+                 Camelot attire, consistent 3:4 framing and palette
+
+Knight-card consistency rules (all 18 must share):
+- Framing:    3:4 portrait, chest-up, subject centered, 10% breathing room
+              at top and bottom.
+- Lighting:   same golden-hour key light from camera-left at ~30°, soft
+              warm fill from camera-right, subtle rim light on fur edges.
+              No high-contrast or noir lighting on any single knight.
+              Background blur matches across all 18.
+- Palette:    pulls from Step 3 tokens; character-specific accent allowed
+              (Lancelot red, Galahad white-gold, Mordred deep purple,
+              Gawain green) but never overrides the global warm palette.
+- Pose:       three-quarter view, eye-line to camera, friendly expression.
+              Villains (Mordred, Agravain) may be sterner but never
+              menacing — this is Pixar, not Grimdark.
+- Breed:      one unique breed per knight, Chief Creative Director's
+              choice. No breed repeats across the 18.
+- Attire:     character-appropriate Camelot (tabard, cape, circlet,
+              mantle). Subtle wear/patina on armor where it fits lore —
+              Arthur pristine, Bedivere slightly worn, etc.
+- Naming:     files as `knight-<name>.png` (lowercase, hyphenated) for
+              downstream reference from the Knights card grid.
+
+
+==============================================================
+STEP 7 — BRAND ASSETS (for `design` skill)
+==============================================================
+
+LOGO brief:
+- Concept:    a crowned paw print, or a shield with a paw-and-coffee-cup
+              crest. Rounded, friendly, storybook-illustrated — NOT heraldic
+              line-art.
+- Wordmark:   "Château Barkalot" in the display typeface from Step 3.
+- Variants:   primary (full), stacked, icon-only, monochrome, inverse.
+- Export:     SVG (primary), PNG @ 2x, favicon 32/48/180px.
+
+ICON SET (SVG, consistent stroke 1.75px, rounded caps, radius-matched to
+Step 3's lg radius where filled):
+- crown (Hero / branding)
+- paw (About / general)
+- tankard (Menu)
+- grail (specialty drinks)
+- sword-crossed (Play Area)
+- scroll (Events)
+- heart-paw (Adoptable)
+- camera (Gallery)
+- quote-scroll (Testimonials)
+- question-shield (FAQ)
+- envelope-wax-seal (Contact)
+
+OG / SOCIAL CARD (1200×630):
+- Logo top-left, tagline centered, hero scene right-60%.
+- Safe-area padding 64px.
+
+
+==============================================================
+STEP 8 — INTERACTIVE COMPONENTS (for `ui-styling` / shadcn)
+==============================================================
+
+Required shadcn/ui primitives:
+- Accordion       (FAQ)
+- Dialog          (Adoptable-dog detail modal, Event RSVP)
+- Form + Input    (Contact form with Zod validation)
+- Select          (Contact topic; Adoptable filter)
+- Carousel        (Testimonials, Gallery lightbox)
+- Card            (Menu items, Events, Knights)
+- Tabs            (Menu categories: brews / pastries / treats)
+- Tooltip         (dietary icons, dog energy-level indicators)
+- Badge           (NEW event, ADOPTED!, Vegan, Gluten-free)
+- Toast           (form-submit confirmation)
+
+Interaction states required on every interactive element:
+default, hover, active, focus-visible, disabled, loading.
+
+Focus-visible: 2px accent-color ring, 2px offset, matches Step 3 radius.
+
+
+==============================================================
+STEP 9 — ASSEMBLE & ANIMATE (final index.html)
+==============================================================
+
+RESPONSIVE BREAKPOINTS: 640 (sm), 1024 (lg), 1280 (xl). Mobile-first.
+
+PERFORMANCE BUDGET:
+- LCP  < 2.5s
+- CLS  < 0.05
+- Lazy-load below-the-fold imagery (loading="lazy", decoding="async").
+- Use srcset for hero and feature images.
+
+SEO / META:
+- <title>Château Barkalot — Where Every Pup Is Knighted</title>
+- meta description: value prop from Step 2 (≤155 chars)
+- OG tags: og:title, og:description, og:image (Step 7 card), og:type=website
+- Twitter card: summary_large_image
+- JSON-LD: LocalBusiness / CafeOrCoffeeShop schema with address + hours
+
+ACCESSIBILITY:
+- Landmark regions: header, nav, main, footer, section[aria-label]
+- Skip-to-content link
+- Alt text on every image (descriptive, not decorative placeholders)
+- prefers-reduced-motion honored (see Step 3 motion rules)
+- Tap targets ≥ 44×44px on mobile
+- Form labels always visible (no placeholder-only labels)
+
+ANIMATION ON ASSEMBLY:
+- Hero:              title fade+rise 900ms, per-word 120ms stagger
+- Section reveals:   IntersectionObserver, threshold 0.15, once:true
+- CTA hover:         lift 2px + shadow md→lg, 200ms
+- Card hover:        lift 4px, tilt 1°, image zoom 1.03
+- Menu tab change:   crossfade 200ms
+- Accordion:         height transition 280ms + icon rotate 200ms
+- Carousel:          slide 500ms with easing from Step 3
