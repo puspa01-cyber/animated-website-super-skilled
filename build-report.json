@@ -1,0 +1,28 @@
+{
+  "pipeline": "/animated-website",
+  "generatedAt": "2026-04-18T12:00:00Z",
+  "briefSource": "brief.txt",
+  "mcp": {
+    "stitch": "fell-back",
+    "firecrawl": "fell-back",
+    "magic": "skipped"
+  },
+  "skills": {
+    "brand": "fired",
+    "ui-ux-pro-max": "fired",
+    "design-system": "fired",
+    "design": "fell-back",
+    "ui-styling": "fired",
+    "nano-banana-2": "fell-back"
+  },
+  "images": {
+    "hero": "tier-3",
+    "categories": "tier-3",
+    "trending": "tier-3",
+    "seasonal": "tier-3",
+    "occasion-looks": "tier-3",
+    "logo": "tier-3",
+    "icons": "tier-3",
+    "og-card": "tier-3"
+  }
+}
