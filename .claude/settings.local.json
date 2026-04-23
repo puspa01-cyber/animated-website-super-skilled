@@ -8,7 +8,12 @@
       "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.pinterest.com/pin/23925441769038472/\")",
       "Bash(curl -v -sL \"https://www.pinterest.com/pin/23925441769038472/\")",
       "WebFetch(domain:www.pinterest.com)",
-      "Bash(curl -k -sL -o hero-pinterest.jpg \"https://i.pinimg.com/originals/3a/66/6d/3a666d248e23ddd5ca5063c2a655cf22.jpg\")"
+      "Bash(curl -k -sL -o hero-pinterest.jpg \"https://i.pinimg.com/originals/3a/66/6d/3a666d248e23ddd5ca5063c2a655cf22.jpg\")",
+      "mcp__firecrawl-mcp__firecrawl_scrape",
+      "WebSearch",
+      "Skill(nano-banana-2)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)"
     ]
   }
 }
