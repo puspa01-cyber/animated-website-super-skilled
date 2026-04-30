@@ -485,19 +485,74 @@
     }
 
     /* === MODAL === */
-    @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes modalFadeOut { from { opacity: 1; } to { opacity: 0; } }
-    @keyframes modalSlideIn { from { opacity: 0; transform: translateY(20px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
-    @keyframes modalSlideOut { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(20px) scale(0.96); } }
-    #outfit-modal .modal-backdrop { animation: modalFadeIn 200ms var(--ease-out) forwards; }
-    #outfit-modal .modal-panel { animation: modalSlideIn 300ms var(--ease-spring) forwards; }
-    #outfit-modal.closing .modal-backdrop { animation: modalFadeOut 200ms var(--ease-out) forwards; }
-    #outfit-modal.closing .modal-panel { animation: modalSlideOut 200ms var(--ease-out) forwards; }
+    @keyframes modalFadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes modalFadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes modalSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes modalSlideOut {
+      from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      to {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+      }
+    }
+
+    #outfit-modal .modal-backdrop {
+      animation: modalFadeIn 200ms var(--ease-out) forwards;
+    }
+
+    #outfit-modal .modal-panel {
+      animation: modalSlideIn 300ms var(--ease-spring) forwards;
+    }
+
+    #outfit-modal.closing .modal-backdrop {
+      animation: modalFadeOut 200ms var(--ease-out) forwards;
+    }
+
+    #outfit-modal.closing .modal-panel {
+      animation: modalSlideOut 200ms var(--ease-out) forwards;
+    }
+
     @media (prefers-reduced-motion: reduce) {
+
       #outfit-modal .modal-backdrop,
       #outfit-modal .modal-panel,
       #outfit-modal.closing .modal-backdrop,
-      #outfit-modal.closing .modal-panel { animation-duration: 0ms !important; }
+      #outfit-modal.closing .modal-panel {
+        animation-duration: 0ms !important;
+      }
     }
   </style>
 </head>
@@ -797,7 +852,7 @@
             class="card-hover reveal group rounded-xl overflow-hidden bg-white border border-light-gray/50 cursor-pointer"
             style="animation-delay: 80ms;">
             <div class="img-zoom aspect-[4/3] overflow-hidden relative">
-              <img src="https://i.pinimg.com/originals/a4/7d/91/a47d911714dfb051c5ffabb5dc56076d.jpg"
+              <img src="https://i.pinimg.com/originals/45/1e/9b/451e9b82e26b8d8516493521e6cf6843.png"
                 alt="Flat lay college outfit with lace top, pink shorts and hat" class="w-full h-full object-cover"
                 loading="lazy">
               <div
@@ -815,7 +870,7 @@
             class="card-hover reveal group rounded-xl overflow-hidden bg-white border border-light-gray/50 cursor-pointer"
             style="animation-delay: 160ms;">
             <div class="img-zoom aspect-[4/3] overflow-hidden relative">
-              <img src="https://i.pinimg.com/originals/23/ad/5c/23ad5c31d81b8f3e772773196de1f034.jpg"
+              <img src="https://i.pinimg.com/originals/26/18/e0/2618e0bc2bb316e9531954c138125a0f.jpg"
                 alt="Flat lay party outfit with purple top and boots" class="w-full h-full object-cover" loading="lazy">
               <div
                 class="absolute inset-0 bg-gradient-to-t from-soft-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -832,7 +887,7 @@
             class="card-hover reveal group rounded-xl overflow-hidden bg-white border border-light-gray/50 cursor-pointer"
             style="animation-delay: 320ms;">
             <div class="img-zoom aspect-[4/3] overflow-hidden relative">
-              <img src="https://i.pinimg.com/originals/eb/a3/0d/eba30d5f5dc9c2e740a5e91ba23e9dd3.jpg"
+              <img src="https://i.pinimg.com/originals/32/bd/aa/32bdaa19b075dc0d92b2790304522d41.jpg"
                 alt="Flat lay formal black blazer with sparkly heels and jewelry" class="w-full h-full object-cover"
                 loading="lazy">
               <div
@@ -989,7 +1044,7 @@
           <div
             class="card-hover group w-[260px] flex-shrink-0 rounded-xl overflow-hidden bg-cream border border-light-gray/30 cursor-pointer">
             <div class="img-zoom aspect-[3/4] relative overflow-hidden">
-              <img src="https://i.pinimg.com/736x/d3/41/e4/d341e48565320471142869dbd056c62e.jpg"
+              <img src="https://i.pinimg.com/originals/7d/61/93/7d61935c7414be9cc916357c12e4e9e0.webp"
                 alt="Pink ivory ruffled prom dress weekend elegant look" class="w-full h-full object-cover"
                 loading="lazy">
               <div
@@ -997,7 +1052,7 @@
                 Weekend</div>
             </div>
             <div class="p-4">
-              <p class="text-sm font-semibold text-soft-black">Chunky Knit & Denim</p>
+              <p class="text-sm font-semibold text-soft-black">Denim set</p>
               <p class="text-xs text-warm-gray mt-0.5">Cozy + Effortless</p>
             </div>
           </div>
@@ -1049,11 +1104,26 @@
             <div class="mb-8">
               <p class="text-xs font-medium text-warm-gray uppercase tracking-wider mb-3">Quick Picks</p>
               <div class="flex flex-wrap gap-2">
-                <button class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200" data-mood="elegant" data-color="dark" data-season="fall" onclick="applyPreset(this)">Date Night</button>
-                <button class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200" data-mood="chill" data-color="neutral" data-season="winter" onclick="applyPreset(this)">WFH Comfort</button>
-                <button class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200" data-mood="playful" data-color="pastel" data-season="spring" onclick="applyPreset(this)">Brunch</button>
-                <button class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200" data-mood="elegant" data-color="bright" data-season="summer" onclick="applyPreset(this)">Wedding Guest</button>
-                <button class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200" data-mood="chill" data-color="earth" data-season="fall" onclick="applyPreset(this)">Travel Day</button>
+                <button
+                  class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200"
+                  data-mood="elegant" data-color="dark" data-season="fall" onclick="applyPreset(this)">Date
+                  Night</button>
+                <button
+                  class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200"
+                  data-mood="chill" data-color="neutral" data-season="winter" onclick="applyPreset(this)">WFH
+                  Comfort</button>
+                <button
+                  class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200"
+                  data-mood="playful" data-color="pastel" data-season="spring"
+                  onclick="applyPreset(this)">Brunch</button>
+                <button
+                  class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200"
+                  data-mood="elegant" data-color="bright" data-season="summer" onclick="applyPreset(this)">Wedding
+                  Guest</button>
+                <button
+                  class="px-4 py-2 rounded-full text-xs font-medium border border-light-gray bg-cream text-soft-black hover:bg-muted-rose hover:text-white hover:border-muted-rose transition-colors duration-200"
+                  data-mood="chill" data-color="earth" data-season="fall" onclick="applyPreset(this)">Travel
+                  Day</button>
               </div>
             </div>
 
@@ -1226,12 +1296,11 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           <div class="card-hover reveal rounded-xl overflow-hidden bg-cream border border-light-gray/30 cursor-pointer">
             <div class="img-zoom aspect-[3/4] overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/31018995/pexels-photo-31018995.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop"
+              <img src="https://i.pinimg.com/736x/d3/41/e4/d341e48565320471142869dbd056c62e.jpg"
                 alt="Rose midi set outfit" class="w-full h-full object-cover" loading="lazy">
             </div>
             <div class="p-4">
-              <p class="text-sm font-semibold text-soft-black">Rose Midi Set</p>
+              <p class="text-sm font-semibold text-soft-black">Tailored Pants</p>
               <p class="text-xs text-warm-gray mt-1">Elegant + Chill</p>
             </div>
           </div>
@@ -1251,20 +1320,19 @@
           <div class="card-hover reveal rounded-xl overflow-hidden bg-cream border border-light-gray/30 cursor-pointer"
             style="animation-delay: 160ms;">
             <div class="img-zoom aspect-[3/4] overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/19413959/pexels-photo-19413959.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop"
+              <img src="https://i.pinimg.com/originals/a7/f0/6f/a7f06fdb4e4429a96f09deb6a1479fc8.jpg"
                 alt="Lavender flow outfit" class="w-full h-full object-cover" loading="lazy">
             </div>
             <div class="p-4">
-              <p class="text-sm font-semibold text-soft-black">Lavender Flow</p>
-              <p class="text-xs text-warm-gray mt-1">Playful + Pastel</p>
+              <p class="text-sm font-semibold text-soft-black">Minimalist</p>
+              <p class="text-xs text-warm-gray mt-1">Playful + Chic</p>
             </div>
           </div>
 
           <div class="card-hover reveal rounded-xl overflow-hidden bg-cream border border-light-gray/30 cursor-pointer"
             style="animation-delay: 240ms;">
             <div class="img-zoom aspect-[3/4] overflow-hidden">
-              <img src="https://i.pinimg.com/originals/bd/e0/fe/bde0fea5bfcc34d67179a163c7394ce4.jpg"
+              <img src="https://i.pinimg.com/originals/23/09/73/2309731aece7815e6011863bc56ecf40.jpg"
                 alt="Noir minimal all-black outfit" class="w-full h-full object-cover" loading="lazy">
             </div>
             <div class="p-4">
@@ -1302,8 +1370,7 @@
           <div
             class="card-hover reveal group rounded-xl overflow-hidden cursor-pointer relative aspect-[3/4] flex items-end"
             style="animation-delay: 80ms;">
-            <img
-              src="https://images.pexels.com/photos/17014138/pexels-photo-17014138.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop"
+            <img src="https://i.pinimg.com/originals/1f/42/7c/1f427cd58c4051c118c0d33d5475801a.jpg"
               alt="Brunch stylish outfit" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-soft-black/70 via-soft-black/10 to-transparent"></div>
             <div class="relative p-5 text-white">
@@ -1325,8 +1392,7 @@
           <div
             class="card-hover reveal group rounded-xl overflow-hidden cursor-pointer relative aspect-[3/4] flex items-end"
             style="animation-delay: 240ms;">
-            <img
-              src="https://images.pexels.com/photos/15641416/pexels-photo-15641416.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop"
+            <img src="https://i.pinimg.com/originals/23/ad/5c/23ad5c31d81b8f3e772773196de1f034.jpg"
               alt="Wedding guest elegant dress" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-soft-black/70 via-soft-black/10 to-transparent"></div>
             <div class="relative p-5 text-white">
@@ -1337,8 +1403,7 @@
           <div
             class="card-hover reveal group rounded-xl overflow-hidden cursor-pointer relative aspect-[3/4] flex items-end"
             style="animation-delay: 320ms;">
-            <img
-              src="https://images.pexels.com/photos/13384733/pexels-photo-13384733.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop"
+            <img src="https://i.pinimg.com/originals/bd/e0/fe/bde0fea5bfcc34d67179a163c7394ce4.jpg"
               alt="Night out elegant black outfit" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-soft-black/70 via-soft-black/10 to-transparent"></div>
             <div class="relative p-5 text-white">
@@ -2080,17 +2145,22 @@
     <!-- ============================================================
        OUTFIT DETAIL MODAL
        ============================================================ -->
-    <div id="outfit-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="outfit-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" role="dialog"
+      aria-modal="true" aria-labelledby="modal-title">
       <div class="absolute inset-0 bg-soft-black/60 backdrop-blur-sm modal-backdrop" onclick="closeOutfitModal()"></div>
       <div class="relative bg-cream rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
         <!-- Close button -->
         <button onclick="closeOutfitModal()" aria-label="Close outfit details"
           class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors border border-light-gray/50">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
         </button>
         <div class="grid lg:grid-cols-2 gap-0">
           <!-- Image -->
-          <div class="aspect-[3/4] lg:aspect-auto lg:min-h-[500px] overflow-hidden rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
+          <div
+            class="aspect-[3/4] lg:aspect-auto lg:min-h-[500px] overflow-hidden rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
             <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
           </div>
           <!-- Details -->
@@ -2102,8 +2172,11 @@
             <p class="font-display text-sm font-semibold uppercase tracking-wider text-soft-black mb-3">Style Notes</p>
             <p id="modal-style-note" class="text-sm text-warm-gray mb-8 italic"></p>
             <div class="flex gap-3 mt-auto">
-              <button id="modal-fav-btn" onclick="toggleFavorite()" class="cta-hover flex-1 py-3 bg-muted-rose text-soft-black font-medium rounded-full text-sm tracking-wide hover:bg-rose-dark hover:text-white transition-colors">Save to Favorites</button>
-              <button onclick="closeOutfitModal()" class="cta-hover flex-1 py-3 bg-transparent border border-light-gray text-soft-black font-medium rounded-full text-sm tracking-wide hover:bg-white transition-colors">Close</button>
+              <button id="modal-fav-btn" onclick="toggleFavorite()"
+                class="cta-hover flex-1 py-3 bg-muted-rose text-soft-black font-medium rounded-full text-sm tracking-wide hover:bg-rose-dark hover:text-white transition-colors">Save
+                to Favorites</button>
+              <button onclick="closeOutfitModal()"
+                class="cta-hover flex-1 py-3 bg-transparent border border-light-gray text-soft-black font-medium rounded-full text-sm tracking-wide hover:bg-white transition-colors">Close</button>
             </div>
           </div>
         </div>
@@ -2398,17 +2471,17 @@
     ];
 
     // Extend OUTFIT_LIBRARY with detail fields and additional entries
-    (function() {
+    (function () {
       var details = {
-        1:  { pieces: ["Oversized linen shirt", "High-waist linen trousers", "Leather slide sandals", "Woven tote bag", "Delicate gold chain"], styleNote: "Roll the sleeves and leave the top two buttons open for an effortless coastal vibe." },
-        2:  { pieces: ["Tailored double-breasted blazer", "Slim-fit trousers", "Pointed-toe leather boots", "Silver cuff watch", "Structured leather bag"], styleNote: "Pop the collar slightly and cuff the sleeves once for a relaxed-power silhouette." },
-        3:  { pieces: ["Pastel midi wrap dress", "Strappy block-heel sandals", "Pearl drop earrings", "Mini crossbody bag", "Silk hair ribbon"], styleNote: "Keep accessories minimal and let the soft color palette do the talking." },
-        4:  { pieces: ["Leather moto jacket", "Black skinny jeans", "Combat boots", "Chain-link necklace", "Dark aviator sunglasses"], styleNote: "Layer a simple white tee underneath to balance the edge with a clean base." },
-        5:  { pieces: ["Printed pleated midi skirt", "Fitted crop top", "Platform espadrilles", "Straw bucket hat", "Beaded bracelet stack"], styleNote: "Tuck in the top and add a belt to define the waist for a polished-casual look." },
-        6:  { pieces: ["Oversized cable-knit sweater", "Corduroy wide-leg pants", "Suede ankle boots", "Wool scarf", "Leather crossbody bag"], styleNote: "Half-tuck the sweater on one side for a relaxed silhouette that still looks intentional." },
-        7:  { pieces: ["Neon bodycon dress", "Strappy stiletto heels", "Statement hoop earrings", "Metallic clutch", "Bold lip color"], styleNote: "Let the dress be the star \u2014 keep everything else sleek and minimal." },
-        8:  { pieces: ["Flowy boho blouse", "Relaxed-fit linen pants", "Woven leather sandals", "Layered pendant necklaces", "Wide-brim hat"], styleNote: "Mix textures like woven and linen to add depth without adding color clutter." },
-        9:  { pieces: ["Black turtleneck", "High-waist tailored trousers", "Sleek leather loafers", "Minimalist silver ring set", "Structured tote"], styleNote: "Play with different textures \u2014 matte, leather, knit \u2014 to keep all-black visually interesting." },
+        1: { pieces: ["Oversized linen shirt", "High-waist linen trousers", "Leather slide sandals", "Woven tote bag", "Delicate gold chain"], styleNote: "Roll the sleeves and leave the top two buttons open for an effortless coastal vibe." },
+        2: { pieces: ["Tailored double-breasted blazer", "Slim-fit trousers", "Pointed-toe leather boots", "Silver cuff watch", "Structured leather bag"], styleNote: "Pop the collar slightly and cuff the sleeves once for a relaxed-power silhouette." },
+        3: { pieces: ["Pastel midi wrap dress", "Strappy block-heel sandals", "Pearl drop earrings", "Mini crossbody bag", "Silk hair ribbon"], styleNote: "Keep accessories minimal and let the soft color palette do the talking." },
+        4: { pieces: ["Leather moto jacket", "Black skinny jeans", "Combat boots", "Chain-link necklace", "Dark aviator sunglasses"], styleNote: "Layer a simple white tee underneath to balance the edge with a clean base." },
+        5: { pieces: ["Printed pleated midi skirt", "Fitted crop top", "Platform espadrilles", "Straw bucket hat", "Beaded bracelet stack"], styleNote: "Tuck in the top and add a belt to define the waist for a polished-casual look." },
+        6: { pieces: ["Oversized cable-knit sweater", "Corduroy wide-leg pants", "Suede ankle boots", "Wool scarf", "Leather crossbody bag"], styleNote: "Half-tuck the sweater on one side for a relaxed silhouette that still looks intentional." },
+        7: { pieces: ["Neon bodycon dress", "Strappy stiletto heels", "Statement hoop earrings", "Metallic clutch", "Bold lip color"], styleNote: "Let the dress be the star \u2014 keep everything else sleek and minimal." },
+        8: { pieces: ["Flowy boho blouse", "Relaxed-fit linen pants", "Woven leather sandals", "Layered pendant necklaces", "Wide-brim hat"], styleNote: "Mix textures like woven and linen to add depth without adding color clutter." },
+        9: { pieces: ["Black turtleneck", "High-waist tailored trousers", "Sleek leather loafers", "Minimalist silver ring set", "Structured tote"], styleNote: "Play with different textures \u2014 matte, leather, knit \u2014 to keep all-black visually interesting." },
         10: { pieces: ["Lavender satin blouse", "White tailored shorts", "Kitten-heel mules", "Dainty gold hoops", "Tinted sunglasses"], styleNote: "Pair lavender with white or cream to let the color breathe without overwhelming." },
         11: { pieces: ["Oversized graphic tee", "Cargo pants", "Chunky sneakers", "Baseball cap", "Mini backpack"], styleNote: "Keep one piece fitted \u2014 if the tee is oversized, go slimmer on the bottom, or vice versa." },
         12: { pieces: ["Satin wrap dress in gold", "Strappy heeled sandals", "Gold cuff bracelet", "Envelope clutch", "Bronzer highlight"], styleNote: "Lean into warm metallics for jewelry to complement the golden tones of the outfit." },
@@ -2417,7 +2490,7 @@
         15: { pieces: ["Velvet blazer in deep plum", "Silk camisole", "Tailored black trousers", "Pointed-toe pumps", "Crystal drop earrings"], styleNote: "Velvet catches light beautifully \u2014 pair with subtle shimmer accessories for evening." },
         16: { pieces: ["Sage green oversized shirt", "Classic straight-leg jeans", "White canvas sneakers", "Simple gold studs", "Canvas tote"], styleNote: "Cuff the jeans once and leave the shirt unbuttoned over a plain white tee for easy layering." }
       };
-      OUTFIT_LIBRARY.forEach(function(o) {
+      OUTFIT_LIBRARY.forEach(function (o) {
         if (details[o.id]) { o.pieces = details[o.id].pieces; o.styleNote = details[o.id].styleNote; }
       });
       // Trending entries
@@ -2480,7 +2553,7 @@
       container.innerHTML =
         '<h3 class="font-display text-2xl text-soft-black mb-6 text-center">Your Curated Looks</h3>' +
         '<div class="grid grid-cols-2 lg:grid-cols-3 gap-6">' +
-        results.map(function(outfit, i) {
+        results.map(function (outfit, i) {
           return '<div class="card-hover rounded-xl overflow-hidden bg-cream border border-light-gray/30 cursor-pointer"' +
             ' role="button" tabindex="0" onclick="openOutfitModal(' + outfit.id + ')"' +
             ' onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();openOutfitModal(' + outfit.id + ')}"' +
@@ -2496,7 +2569,7 @@
         '</div>';
 
       // Smooth scroll to results
-      setTimeout(function() {
+      setTimeout(function () {
         container.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
 
@@ -2524,19 +2597,19 @@
       var season = chip.dataset.season;
 
       // Activate the matching filter buttons so the form visually fills in
-      ['mood', 'color', 'season'].forEach(function(filterName) {
+      ['mood', 'color', 'season'].forEach(function (filterName) {
         var value = filterName === 'mood' ? mood : filterName === 'color' ? color : season;
         var group = document.querySelector('[data-filter="' + filterName + '"]');
-        group.querySelectorAll('.pill-btn, .vibe-card').forEach(function(b) { b.classList.remove('active'); });
+        group.querySelectorAll('.pill-btn, .vibe-card').forEach(function (b) { b.classList.remove('active'); });
         var target = group.querySelector('[data-value="' + value + '"]');
         if (target) target.classList.add('active');
       });
 
       // Visual feedback on chip: brief active flash
       var siblings = chip.parentNode.querySelectorAll('button');
-      siblings.forEach(function(c) { c.classList.remove('bg-muted-rose', 'text-white', 'border-muted-rose'); });
+      siblings.forEach(function (c) { c.classList.remove('bg-muted-rose', 'text-white', 'border-muted-rose'); });
       chip.classList.add('bg-muted-rose', 'text-white', 'border-muted-rose');
-      setTimeout(function() {
+      setTimeout(function () {
         chip.classList.remove('bg-muted-rose', 'text-white', 'border-muted-rose');
       }, 400);
 
@@ -2567,7 +2640,7 @@
     var _modalOutfitId = null;
 
     function openOutfitModal(id) {
-      var outfit = OUTFIT_LIBRARY.find(function(o) { return o.id === id; });
+      var outfit = OUTFIT_LIBRARY.find(function (o) { return o.id === id; });
       if (!outfit) return;
 
       _modalTrigger = document.activeElement;
@@ -2577,7 +2650,7 @@
       document.getElementById('modal-image').alt = outfit.name + ' \u2014 ' + outfit.description;
       document.getElementById('modal-title').textContent = outfit.name;
       document.getElementById('modal-description').textContent = outfit.description;
-      document.getElementById('modal-pieces').innerHTML = (outfit.pieces || []).map(function(p) {
+      document.getElementById('modal-pieces').innerHTML = (outfit.pieces || []).map(function (p) {
         return '<li>' + p + '</li>';
       }).join('');
       document.getElementById('modal-style-note').textContent = outfit.styleNote || '';
@@ -2588,7 +2661,7 @@
       modal.classList.add('flex');
       document.body.style.overflow = 'hidden';
 
-      setTimeout(function() {
+      setTimeout(function () {
         modal.querySelector('[aria-label="Close outfit details"]').focus();
       }, 50);
     }
@@ -2598,7 +2671,7 @@
       if (modal.classList.contains('hidden')) return;
 
       modal.classList.add('closing');
-      setTimeout(function() {
+      setTimeout(function () {
         modal.classList.add('hidden');
         modal.classList.remove('flex', 'closing');
         document.body.style.overflow = '';
@@ -2634,12 +2707,12 @@
     }
 
     // Escape key closes modal
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeOutfitModal();
     });
 
     // Focus trap inside modal
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       var modal = document.getElementById('outfit-modal');
       if (modal.classList.contains('hidden') || e.key !== 'Tab') return;
       var focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
@@ -2654,10 +2727,10 @@
     });
 
     // === WIRE UP TRENDING + SEASONAL CARDS ===
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Trending cards (4 cards in order)
       var trendingIds = [17, 18, 19, 20];
-      document.querySelectorAll('#trending .grid > .card-hover').forEach(function(card, i) {
+      document.querySelectorAll('#trending .grid > .card-hover').forEach(function (card, i) {
         if (trendingIds[i] !== undefined) wireOutfitCard(card, trendingIds[i]);
       });
 
@@ -2668,7 +2741,7 @@
         'Cozy Layers': 27, 'Trench Coat Fit': 28, 'Boot Season': 29,
         'Puffer & Knits': 30, 'Holiday Glam': 31, "New Year's Eve": 32
       };
-      document.querySelectorAll('[data-tab-content] .card-hover').forEach(function(card) {
+      document.querySelectorAll('[data-tab-content] .card-hover').forEach(function (card) {
         var h4 = card.querySelector('h4');
         if (h4 && seasonalMap[h4.textContent.trim()]) {
           wireOutfitCard(card, seasonalMap[h4.textContent.trim()]);
@@ -2680,8 +2753,8 @@
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');
       card.style.cursor = 'pointer';
-      card.addEventListener('click', function() { openOutfitModal(id); });
-      card.addEventListener('keydown', function(e) {
+      card.addEventListener('click', function () { openOutfitModal(id); });
+      card.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openOutfitModal(id); }
       });
     }
